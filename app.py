@@ -101,7 +101,7 @@ def close_figs():
 # ─────────────────────────────────────────────────────────────────────────────
 # 2.  CACHED PIPELINE  (re-runs only when inputs change)
 # ─────────────────────────────────────────────────────────────────────────────
-@st.cache_data(show_spinner=False)
+@st.cache_resource(show_spinner=False)
 def run_pipeline(file_bytes, n_est, m_depth, t_size, p_cap):
     """
     Full end-to-end ML pipeline.
